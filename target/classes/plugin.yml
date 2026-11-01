@@ -1,0 +1,21 @@
+name: RealisticTerrain
+version: '1.0.0'
+main: com.says.realisticterrain.RealisticTerrainPlugin
+api-version: '1.18'
+load: STARTUP
+folia-supported: true
+authors: [says]
+description: 现代真实地形生成器：大陆与山脉、稀疏洞穴、地形最高 y=304，兼容 Folia。
+website: https://github.com/says/RealisticTerrain
+
+commands:
+  realisticterrain:
+    aliases: [rt, realterrain, rterrain]
+    description: 查看真实地形生成器状态、查询坐标、重载配置
+    usage: /realisticterrain <info|biome|pregen|reload|help>
+    permission: realisticterrain.admin
+
+permissions:
+  realisticterrain.admin:
+    description: 允许使用 /realisticterrain
+    default: op
